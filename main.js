@@ -195,6 +195,10 @@ app.post("/followers", async (req, res) => {
   }
 });
 
+app.post("/", async (req, res) => {
+    return res.json({ message: "Server is running" });
+})
+
 // Start server
 app.listen(port, () => {
   console.log(`🚀 Server running at http://localhost:${port}`);
