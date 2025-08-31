@@ -195,7 +195,7 @@ app.post("/followers", async (req, res) => {
   }
 });
 
-app.post("/", async (req, res) => {
+app.get("/", async (req, res) => {
     return res.json({ message: "Server is running" });
 })
 
